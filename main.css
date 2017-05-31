@@ -1,0 +1,64 @@
+html, body {
+	overflow: hidden;
+	display: table;
+	background: #ddd;
+	color: #fff;
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+.cell {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+body {
+	background: #ddd;
+	padding-top: 73px;
+	max-height: 100%;
+}
+
+header a:not(.img) {
+	margin: 10px 20px;
+	width: 90%;
+}
+
+header {
+	height: 70px;
+}
+@media only screen and (max-width:800px) {
+	header a:not(.img) {
+		display: block;
+	}
+}
+a.link {
+	width: 100%;
+	display: block;
+	border-bottom: 1px solid #444;
+	background-color: #fff;
+	color: #3e4556;
+	font-size: 70px;
+	text-decoration: none;
+    text-align: left;
+    font-weight: lighter;
+    background-image: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_keyboard_arrow_right_black_24px.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+a.link:nth-child(even) {
+	border-top: 1px solid #444;
+}
+.link span {
+	display: inline-block;
+	height: 100%;
+    margin: 5px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.link img {
+	display: inline-block;
+	width: 49px;
+    padding: 5px;
+    margin-left: 10px;
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+		<meta http-equiv="Content-Language" content="en">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+
+		<!-- Other Meta tags -->
+
+		<!-- <meta name="google-site-verification" content="" /> -->
+
+		<meta name="author" content="Snazzah">
+		<meta content="Discord Cards - A Discord Trading Card Bot" property="og:description">
+		<meta content="Discord Cards - Lookup Cards" property="og:title">
+		<meta content="https://lookup.discord.cards/cards.png" property="og:image">
+		<meta content="image/png" property="og:image:type">
+		<meta content="150" property="og:image:width">
+		<meta content="150" property="og:image:heigth">
+		<meta content="https://lookup.discord.cards/cards" property="og:url">
+		<meta content="Discord Cards" property="og:site_name">
+
+		<meta name="twitter:card" content="summary">
+		<meta name="twitter:url" content="https://lookup.discord.cards/cards">
+		<meta name="twitter:title" content="Discord Cards - Lookup Cards">
+		<meta name="twitter:description" content="Discord Cards -A Discord Trading Card Bot">
+		<meta name="twitter:image" content="https://lookup.discord.cards/cards.png">
+		<meta name="twitter:image:type" content="image/png">
+		<meta name="twitter:image:width" content="150">
+		<meta name="twitter:image:height" content="150">
+		<meta name="twitter:creator" content="@SnazzahGuy">
+		<meta name="twitter:site" content="@SnazzahGuy">
+
+		<meta name="description" content="Discord Cards - A Discord Trading Card Bot">
+		<meta name="title" content="Discord Cards - Lookup Cards">
+
+		<meta name="subject" content="A Discord Trading Card Bot">
+		<meta name="copyright" content="Discord Cards">
+		<meta name="owner" content="Snazzah">
+		<meta name="revised" content="Tuesday, May 5th, 2017, 4:30 am">
+		<meta name="rating" content="General">
+
+
+		<link rel="fluid-icon" type="image/png" href="https://lookup.discord.cards/cards.png" />
+		<link rel="canonical" href="https://lookup.discord.cards/cards/index.html" />
+
+
+		<link rel="apple-touch-icon-precomposed" href="https://lookup.discord.cards/cards.png"/>
+		<link rel="apple-touch-icon" href="https://lookup.discord.cards/cards.png"/>
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<!-- IE Meta -->
+
+		<meta name="msapplication-starturl" content="https://lookup.discord.cards/cards">
+		<meta name="application-name" content="Discord Cards">
+		<meta name="msapplication-tooltip" content="Go to Discord Cards">
+
+
+
+		<link rel="icon" type="image/png" class="" href="https://discord.cards/i/metaicon.png" />
+		<link href="https://discord.cards/css/main.min.css" type="text/css" rel="stylesheet">
+		<link href="module.css" type="text/css" rel="stylesheet">
+		<title>Discord Cards - Lookup</title>
+	</head>
+	<body>
+		<header>
+			<a href="https://discord.cards">Discord Cards Lookup</a>
+		</header>
+		<div class="loading">
+			<b>Initializing Scripts...</b><br>
+			<img src="./wave.svg">
+			<progress value="" max="" class="hide"></progress>
+		</div>
+		<div class="searching">
+			<a id="no-content"></a>
+			<a id="link" class="hide" href="#"></a>
+			<a id="close" class="hide" onclick="DCLookup.clearSearch()"></a>
+			<input placeholder="Search for a card..." oninput="DCLookup.parseSearch()">
+			<div class="results">
+			</div>
+		</div>
+		<div class="card-preview">
+			<div class="card-cell" onclick="DCLookup.hideCard()">
+				<div class="card-box" onmouseover="cardLock=true" onmouseout="cardLock=false">
+					<a id="no-content"></a>
+					<a id="close" onclick="DCLookup.hideCard(true)"></a>
+					<img class="main-card" draggable="false" src="https://discord.cards/i/c/31.png"onmouseover="cardLock=false" onmouseout="cardLock=true">
+					<p id="card-name">eyes</p>
+					<p id="card-rarity">Rare</p>
+					<p id="card-series">Series 2 - Discord API</p>
+					<div class="buying offer">
+					</div>
+					<div class="selling offer">
+					</div>
+					<img class="load" src="./wave.svg">
+				</div>
+			</div>
+		</div>
+		<div class="stt" onclick="window.scrollTo(0,0)"></div>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/2.6.1/fuse.min.js"></script>
+		<script src="module.js"></script>
+	</body>
+</html>
